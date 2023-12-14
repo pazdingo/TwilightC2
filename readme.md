@@ -72,6 +72,10 @@ printf("%s", color.Execute())
 
 Twilight C2 is distributed as a closed-source application. Please refer to the terms of use provided with your copy of the software for licensing details.
 
+## Credits
+
+Twilight C2 is solely made by @pazdano & @exploitable on telegram.
+
 ## Support and Contact
 
 For support or inquiries, please contact the Twilight C2 support team on telegram @twilightcnc.
