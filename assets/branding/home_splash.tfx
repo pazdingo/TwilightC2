@@ -1,0 +1,11 @@
+<?swash
+var time = require("date/time")
+var gradient = require("gradient")
+var x = gradient.new()
+x.AppendRGB(255,0,0)
+x.AppendRGB(255,255,255)
+x.SetText("Hello, Welcome to twilight this is a gradient example!")
+printf("\033cHello \033[38;2;107;4;181m%s \033[0mWelcome to \033[38;2;107;4;181mTwilight\033[0m.", user.$Username)
+printf("Your account expires in \033[38;2;107;4;181m%s\033[0m", time.until(user.$Expiry))
+printf("%s", x.Execute())
+?>

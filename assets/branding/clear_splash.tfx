@@ -1,0 +1,2 @@
+<<clear()>>Hello \033[38;2;107;4;181m<<user.$Username>> \033[0mWelcome to \033[38;2;107;4;181mTwilight\033[0m.
+You have \033[38;2;107;4;181m<<user.$Left>>\033[0m/\033[38;2;107;4;181m<<user.$Attacks>>\033[0m attacks left.

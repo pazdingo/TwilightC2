@@ -1,0 +1,10 @@
+{
+    "bypass":{
+        "conns":30,
+        "enabled":true
+    },
+    "raw":{
+        "conns":1,
+        "enabled":true
+    }
+}

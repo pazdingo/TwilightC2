@@ -1,0 +1,19 @@
+{
+    "server":{
+        "server.port":1234,
+        "server.listener":"0.0.0.0",
+        "server.logger":"master",
+        "server.application":{
+            "server.application.name":"Twilight",
+            "server.application.slaves":{
+                "server.application.slaves.port":8974,
+                "server.application.slaves.listener":"0.0.0.0",
+                "server.application.slaves.logger":"slaves"
+            }
+        }
+    },
+    "database":{
+        "database.file":"./assets/database.db",
+        "database.logger":"database"
+    }
+}

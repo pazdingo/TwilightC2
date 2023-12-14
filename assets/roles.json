@@ -1,0 +1,8 @@
+{
+    "vip":{
+        "description":"this role is for the more sophisticated users"
+    },
+    "vip+":{
+        "description":"allows full network access"
+    }
+}

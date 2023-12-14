@@ -1,0 +1,30 @@
+{
+    "ovh":{
+        "group":"bypass",
+        "description":"tcp based bypass method",
+        "ranks":[""],
+        "subnet":false,
+        "remotes":["https://google.com/"]
+    },
+    "ovh-vip":{
+        "group":"bypass",
+        "description":"tcp based bypass method",
+        "ranks":["vip"],
+        "subnet":false,
+        "remotes":["google.com/attack?target=<<$target>>"]
+    },
+    "tcp-syn":{
+        "group":"bypass",
+        "description":"tcp based bypass method",
+        "ranks":["vip+"],
+        "subnet":false,
+        "remotes":["google.com/attack?target=<<$target>>"]
+    },
+    "dns":{
+        "group":"bypass",
+        "description":"tcp based bypass method",
+        "ranks":["vip+"],
+        "subnet":true,
+        "remotes":["google.com/attack?target=<<$target>>"]
+    }
+}

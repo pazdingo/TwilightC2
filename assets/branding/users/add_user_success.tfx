@@ -1,0 +1,7 @@
+<?swash
+var time = require("date/time")
+printf("Succesfully added %s", newuser.$Username)
+printf("Attacks: %d", newuser.$Attacks)
+printf("Attack Time: %d",newuser.$Duration)
+printf("Expiry: %s", time.until(newuser.$Expiry))
+?>

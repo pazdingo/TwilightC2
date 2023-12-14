@@ -1,0 +1,18 @@
+ \033[38;2;107;4;181m- \033[0mUDP Vectors\033[38;2;107;4;181m.\033[0m
+  \033[38;2;107;4;181m- \033[0mstd \033[38;2;107;4;181m- \033[0mUDP String data flood with min\033[38;2;107;4;181m/\033[0mmax data len\033[38;2;107;4;181m.\033[0m
+  \033[38;2;107;4;181m- \033[0mudpplain \033[38;2;107;4;181m- \033[0mUDP socket flood with custom payload & min\033[38;2;107;4;181m/\033[0mmaxlen\033[38;2;107;4;181m.\033[0m
+  \033[38;2;107;4;181m- \033[0mudpraw \033[38;2;107;4;181m- \033[0mUDP Raw socket flood\033[38;2;107;4;181m.\033[0m
+  \033[38;2;107;4;181m- \033[0mraknet \033[38;2;107;4;181m- \033[0mUDP Raknet socket flood designed to bypass games\033[38;2;107;4;181m.\033[0m
+  \033[38;2;107;4;181m- \033[0mopenvpn \033[38;2;107;4;181m- \033[0mUDP OpenVPN flood designed to exhaust OpenVPN servers\033[38;2;107;4;181m.\033[0m
+  \033[38;2;107;4;181m- \033[0mudpbypass \033[38;2;107;4;181m- \033[0mUDP socket flood with subnet support designed to bypass\033[38;2;107;4;181m.\033[0m
+ \033[38;2;107;4;181m- \033[0mTCP Vectors\033[38;2;107;4;181m.
+  \033[38;2;107;4;181m- \033[0msyn \033[38;2;107;4;181m- \033[0mTCP SYN flood with custom payload & min\033[38;2;107;4;181m/\033[0mmaxlen\033[38;2;107;4;181m.\033[0m
+  \033[38;2;107;4;181m- \033[0mack \033[38;2;107;4;181m- \033[0mTCP ACK flood with custom payload & min\033[38;2;107;4;181m/\033[0mmaxlen\033[38;2;107;4;181m.\033[0m
+  \033[38;2;107;4;181m- \033[0mwra \033[38;2;107;4;181m- \033[0mTCP bypass flood with randomized TCP Headers\033[38;2;107;4;181m.\033[0m
+  \033[38;2;107;4;181m- \033[0msyndata \033[38;2;107;4;181m- \033[0mTCP SYN flood with custom payload & min\033[38;2;107;4;181m/\033[0mmaxlen\033[38;2;107;4;181m.\033[0m
+  \033[38;2;107;4;181m- \033[0mhandshake \033[38;2;107;4;181m- \033[0mTCP 3\033[38;2;107;4;181m-\033[0mway handshake flood with subnet support\033[38;2;107;4;181m.\033[0m
+  \033[38;2;107;4;181m- \033[0msocket \033[38;2;107;4;181m- \033[0mTCP socket flood designed to bypass tcp based targets\033[38;2;107;4;181m.\033[0m
+  \033[38;2;107;4;181m- \033[0msockethold \033[38;2;107;4;181m- \033[0mTCP socket hold flood designed to exhaust tcp devices\033[38;2;107;4;181m.\033[0m
+  \033[38;2;107;4;181m- \033[0mtcpbypass \033[38;2;107;4;181m- \033[0mTCP socket flood designed to bypass devices\033[38;2;107;4;181m.\033[0m
+ \033[38;2;107;4;181m- \033[0mGRE Vectors\033[38;2;107;4;181m.
+  \033[38;2;107;4;181m- \033[0mgreip \033[38;2;107;4;181m- \033[0mL3 GRE IP flood\033[38;2;107;4;181m.\033[0m

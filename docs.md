@@ -1,0 +1,83 @@
+# Twilight CNC
+- TermFX
+ - General
+ - clear() - clears the screen
+ - online() - returns the sessions
+ - ongoing() - returns the global ongoing attacks
+  - HTTP
+   - make - <<http.make($method: string, $url: string)>> - returns to a variable called X
+    - SetTimeout - <<x.SetTimeout(1 * time.$second)>>
+    - AddHeader($n: string, $v: string) - <<x.AddHeader("User-Agent", "Mozilla/5.0")>>
+    - Do() - <<x.Do()>> - returns a string with the url content
+    - DoWithJson - <<x.DoWithJson>> - returns a object
+   - get - <<http.$GET>> - returns a string with the url content
+   - post - <<http.$POST>> - returns a string with the url content
+   - put - <<http.$PUT>> - returns a string with the url content
+   - example `<?swash
+   var http = require("http")
+   http.make("GET", "https://ip-api/json/1.1.1.1")
+   data = x.DoWithJson()
+   print(data.$region)
+   ?>`
+  - Time
+   - <<time.sleep($d: number)>> - <<time.sleep(1 * time.$second)>>
+   - <<time.until($u: number)>> - <<time.until(user.$Expiry)>>
+  - Gradient
+   - DOES NOT WORK AS OF NOW.
+   - new() - <<gradient.new()>> - this returns to a variable called x
+   - AppendRGB($r: int, $g: int, $b: int) - <<x.AppendRGB(0,0,0)>> - appends a color to the gradient
+   - SetText($t: string) - <<x.SetText("hello There!")>> - sets the gradient text
+   - Execute() - <<x.Execute()>> - returns the gradiented text
+ - User
+  - <<user.HasRole(role: string)>> bool - checks if the given user has a specific role
+  - <<user.Ongoing()>> int - returns the amount of user's running attacks
+  - <<user.AttacksLeft()>> int - returns the amount of user's unused attacks
+  - <<user.$ID>> - returns the user ID
+  - <<user.$Username>> - returns the username
+  - <<user.$Admin>> - returns the user admin status
+  - <<user.$Seller>> - returns the user seller status
+  - <<user.$Expiry>> - returns the user expiry in unix
+  - <<user.$Concurrents>> - returns the amount of users concurrents
+  - <<user.$Duration>> - returns the user's attack time
+  - <<user.$Cooldown>> - returns the user's cooldown
+  - <<user.$Parent>> - returns the user's parent id
+ - Attack
+  - <<attack.$Target>> - returns the attack target (this is used in the apis.json file too)
+  - <<attack.$Port>> - returns the attacked port (this is used in the apis.json file too)
+  - <<attack.$Duration>> - returns the attack duration (this is used in the apis.json file too)
+  - <<attack.$Region>> - returns the target region (state/city)
+  - <<attack.$Country>> - returns the target country
+- Command TermFX
+ - Users
+  - add
+   - <<newuser.$ID>> - returns the user ID
+   - <<newuser.$Username>> - returns the username
+   - <<newuser.$Admin>> - returns the user admin status
+   - <<newuser.$Seller>> - returns the user seller status
+   - <<newuser.$Expiry>> - returns the user expiry in unix
+   - <<newuser.$Concurrents>> - returns the amount of users concurrents
+   - <<newuser.$Duration>> - returns the user's attack time
+   - <<newuser.$Cooldown>> - returns the user's cooldown
+   - <<newuser.$Parent>> - returns the user's parent id
+  - update
+   - <<$error>> - displays the erro (only available in _error.tfx files)
+   - <<updated.$Admin>> - returns the user admin status
+   - <<updated.$Seller>> - returns the user seller status
+   - <<updated.$Expiry>> - returns the user expiry in unix
+   - <<updated.$Concurrents>> - returns the amount of users concurrents
+   - <<updated.$Duration>> - returns the user's attack time
+   - <<updated.$Cooldown>> - returns the user's cooldown
+  - delete
+   - <<$error>> - displays the erro (only available in _error.tfx files)
+   - <<deleted.$ID>> - returns the deleted users id
+   - <<deleted.$Username>> - returns the deleted users Username
+   - <<deleted.$Admin>> - returns the user admin status
+   - <<deleted.$Seller>> - returns the user seller status
+   - <<deleted.$Expiry>> - returns the user expiry in unix
+   - <<deleted.$Concurrents>> - returns the amount of users concurrents
+   - <<deleted.$Duration>> - returns the user's attack time
+   - <<deleted.$Cooldown>> - returns the user's cooldown
+ - commands
+  - <<$error>> - displays the erro (only available in _error.tfx files)
+  - <<$command>> - returns the command aliases
+  - <<$description>> - returns the command description
